@@ -1,0 +1,190 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+MERGED from [com.google.android.gms:play-services-ads:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.2.6.aar\c2ee458f864af30fb34a9deda01ebc5a\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:16:1-28:12
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.2.6.aar\0cbbac14cfb8181a47b73632ded24bf5\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.2.6.aar\9a32a12216c33e26e66b8a2de22706ac\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.2.6.aar\86cb80fffac13d82f093f76ac3adadc6\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.6.aar\17e0c2651f7f4853209983190829770d\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\4a1c5614c3a671fba58e8ded3faa79a8\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\54b5fd2928e5e0981f6ab041e2fe32ba\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\1b5ea1d9e395880fdace68a6cd7c36e6\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\8167ecfcd657c72e76bfc0c647c59617\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\46401531373af3c0998388d98ed88ad2\AndroidManifest.xml:17:1-27:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:1-32:12
+	package
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:7:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:8:1-61
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:8:18-59
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:9:1-62
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:9:18-60
+uses-permission#android.permission.INTERNET
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:10:2-63
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:19:5-66
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:10:19-61
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:11:2-75
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:11:19-73
+application
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:12:5-30:19
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.2.6.aar\0cbbac14cfb8181a47b73632ded24bf5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.2.6.aar\0cbbac14cfb8181a47b73632ded24bf5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.2.6.aar\9a32a12216c33e26e66b8a2de22706ac\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.2.6.aar\9a32a12216c33e26e66b8a2de22706ac\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.2.6.aar\86cb80fffac13d82f093f76ac3adadc6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.2.6.aar\86cb80fffac13d82f093f76ac3adadc6\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.6.aar\17e0c2651f7f4853209983190829770d\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.6.aar\17e0c2651f7f4853209983190829770d\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\4a1c5614c3a671fba58e8ded3faa79a8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\4a1c5614c3a671fba58e8ded3faa79a8\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\54b5fd2928e5e0981f6ab041e2fe32ba\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\54b5fd2928e5e0981f6ab041e2fe32ba\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\1b5ea1d9e395880fdace68a6cd7c36e6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\1b5ea1d9e395880fdace68a6cd7c36e6\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\8167ecfcd657c72e76bfc0c647c59617\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\8167ecfcd657c72e76bfc0c647c59617\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\46401531373af3c0998388d98ed88ad2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\46401531373af3c0998388d98ed88ad2\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:14:9-45
+	android:allowBackup
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.example.acc.falldetection
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:17:9-26:20
+	android:label
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:19:13-45
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:18:13-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:20:13-25:29
+action#android.intent.action.MAIN
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:21:25-66
+meta-data#com.google.android.gms.version
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:22:17-23:76
+	android:value
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:23:21-74
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:22:28-73
+category#android.intent.category.LAUNCHER
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:24:27-74
+activity#com.google.android.gms.ads.AdActivity
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:27:9-28:124
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:25:9-232
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:27:19-71
+service#com.example.acc.detection
+ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:29:9-53
+	android:name
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml:29:18-42
+uses-sdk
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.gms:play-services-ads:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.2.6.aar\c2ee458f864af30fb34a9deda01ebc5a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-10.2.6.aar\c2ee458f864af30fb34a9deda01ebc5a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.2.6.aar\0cbbac14cfb8181a47b73632ded24bf5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-clearcut-10.2.6.aar\0cbbac14cfb8181a47b73632ded24bf5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.2.6.aar\9a32a12216c33e26e66b8a2de22706ac\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-gass-10.2.6.aar\9a32a12216c33e26e66b8a2de22706ac\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.2.6.aar\86cb80fffac13d82f093f76ac3adadc6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-tasks-10.2.6.aar\86cb80fffac13d82f093f76ac3adadc6\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.6.aar\17e0c2651f7f4853209983190829770d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-basement-10.2.6.aar\17e0c2651f7f4853209983190829770d\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\4a1c5614c3a671fba58e8ded3faa79a8\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\4a1c5614c3a671fba58e8ded3faa79a8\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\54b5fd2928e5e0981f6ab041e2fe32ba\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\54b5fd2928e5e0981f6ab041e2fe32ba\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\1b5ea1d9e395880fdace68a6cd7c36e6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\1b5ea1d9e395880fdace68a6cd7c36e6\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\8167ecfcd657c72e76bfc0c647c59617\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\8167ecfcd657c72e76bfc0c647c59617\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\46401531373af3c0998388d98ed88ad2\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\46401531373af3c0998388d98ed88ad2\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.2.0] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\c7b229adaac1007a7406d3a69f6637a7\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		ADDED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ADT\.AndroidStudio2.3\acc\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-10.2.6.aar\4f7398d8c8da1b7e26332cb739ea416d\AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.6] C:\Users\sky_w\.gradle\caches\transforms-1\files-1.1\play-services-base-10.2.6.aar\0482ebe8ea9fd72dd8a5abfeafeb37fa\AndroidManifest.xml:19:19-85
