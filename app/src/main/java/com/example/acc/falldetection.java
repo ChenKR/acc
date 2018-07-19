@@ -13,31 +13,24 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.graphics.drawable.Drawable;
 import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.PowerManager;
-import android.os.PowerManager.WakeLock;
 import android.support.v4.app.NotificationCompat;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toolbar;
+
 import com.google.android.gms.ads.*;
-import android.widget.ImageView;
-import com.example.acc.GifAnimationDrawable;
-import android.graphics.drawable.AnimationDrawable;
 import com.ant.liao.GifView;
 
  class arr {
@@ -61,18 +54,19 @@ public class falldetection extends Activity {
 	public double svm,second;
 	private static final String TAG = "falldetection";
     public int count=0;
+	static boolean isPlay = true;
 	SensorManager sensormanager = null;
 	List<Sensor> sensorList;
 	Sensor accSensor = null;
 	TextView txt = null,txt_1 = null,txt_at = null,txt_state;
 	public String state="nonfall",message="您的長輩發生跌倒，請盡速前往察看。";
-	Button imok,start,stop;
+	ImageButton start,imok;
 	smartphone smart=new smartphone();
 	detection detect=new detection();
 	 MyReceiver receiver; 
 	 EditText phonenumber;
 	 SmsManager smsManager;
-	 private  GifView  gif3;
+	 public   GifView  gif3;
 	private boolean f = true;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,8 +97,10 @@ public class falldetection extends Activity {
         findViews();
         start.setOnClickListener(startservice);
         smsManager = SmsManager.getDefault();
-        stop.setEnabled(false);
-        stop.setOnClickListener(stopservice);
+
+       // stop.setEnabled(false);
+       // stop.setOnClickListener(stopservice);
+		imok.setEnabled(false);
         imok.setOnClickListener(ok);
 		
        // sensormanager.registerListener(new accSensorListener(), accSensor, SensorManager.SENSOR_DELAY_FASTEST);
@@ -114,34 +110,27 @@ public class falldetection extends Activity {
         //runAppFromApkFileOnSdCard();
         
     }
-    protected void runAppFromApkFileOnSdCard() {
 
-    	
-    	Intent LaunchIntent = getPackageManager().getLaunchIntentForPackage("com.exigo.tiny");
-    	startActivity( LaunchIntent );
-    	/*String apkPath = Environment.getExternalStorageDirectory().getAbsolutePath()
-                + "/com.google.zxing.client.android-1.apk";
- PackageManager pm = getPackageManager();
-
- PackageInfo info = pm.getPackageArchiveInfo(apkPath, 
-                        PackageManager.GET_ACTIVITIES);
- //Log.i("ActivityInfo", "Package name is " + info.packageName);
-
- for (android.content.pm.ActivityInfo a : info.activities) {
-     Log.i("ActivityInfo", a.name);
- }*/
-    }
     private void findViews() {
     	txt= (TextView)findViewById(R.id.second); 
         txt_at= (TextView)findViewById(R.id.SVM);
-        imok=(Button) findViewById(R.id.OK);
-        start=(Button) findViewById(R.id.start_service);
-        stop=(Button) findViewById(R.id.stop_service);
+        imok=(ImageButton) findViewById(R.id.OK);
+        start=(ImageButton) findViewById(R.id.start_service);
+       // stop=(Button) findViewById(R.id.stop_service);
         txt_state =(TextView)findViewById(R.id.state);
         phonenumber=(EditText)findViewById(R.id.editText1);
-       // iv = (ImageView)findViewById( R.id.image1);
+		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		// iv = (ImageView)findViewById( R.id.image1);
     }
-
+	@Override
+	public  boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.display_gi, menu);
+		for(int i = 0; i < 5; i++){
+			menu.add(Menu.NONE, Menu.FIRST + i, Menu.NONE, "Item " + Integer.toString(i + 1));
+		}
+		return true;
+	}
     public  void writeFiles() {
     	
 	   	 
@@ -160,7 +149,11 @@ public class falldetection extends Activity {
 		e.printStackTrace();
 		}}
 }
-    public class MyReceiver extends BroadcastReceiver { 
+
+
+
+
+	public class MyReceiver extends BroadcastReceiver { 
         //自定义一个广播接收器 
     	
         @Override 
@@ -180,7 +173,7 @@ public class falldetection extends Activity {
        			 null, message,
        			 PendingIntent.getBroadcast(getApplicationContext(), 0,new Intent(), 0),
        			 null);
-      	NotificationManager manager=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);          
+      	NotificationManager manager=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 		Intent notifyIntent = new Intent(falldetection.this,falldetection.class);
 		notifyIntent.setFlags( Intent.FLAG_ACTIVITY_NEW_TASK);
 		notifyIntent.setAction(Intent.ACTION_MAIN);
@@ -201,7 +194,6 @@ public class falldetection extends Activity {
 
                // Notification notification = new Notification();
 
-
 				// 建立震動效果，陣列中元素依序為停止、震動的時間，單位是毫秒
 				long[] vibrate_effect = {1000, 500, 1000, 400, 1000, 300, 1000, 200, 1000, 100};
 // 設定震動效果
@@ -215,21 +207,27 @@ public class falldetection extends Activity {
 				manager.notify(0, notification);
 		//送出Notification
 		manager.notify(0,notification);
+				//falldetection.this.unregisterReceiver(receiver);
 		}
           if(state.equals("fall"))
 			{
+
         	 txt_state.setTextColor(0xFFFF0000);
         	 txt_state.setText("State: fall");
+        	 imok.setEnabled(true);
         	 count=count+1;
         	 if(count>3)
         	 {
         		 count=2;
         	 }
   		  	}
-         
+			//gif3.showCover();
+			//gif3.setGifImage(getResources().openRawResource(R.raw.fall));
+			//gif3.showAnimation();//gif開始撥放
           if(state.equals("nonfall"))
 			{
-        	  txt_state.setTextColor(0xFF000000);
+
+				txt_state.setTextColor(0xFF000000);
         	  txt_state.setText("State: nonfall");
         	  count=0;
 			}
@@ -258,40 +256,50 @@ public class falldetection extends Activity {
             public void onClick(View v)
              {
 
-                 gif3.showAnimation();
-            	stop.setEnabled(true);
-            	phonenumber.setEnabled(false);
-            	Intent intent = new Intent(falldetection.this, detection.class);
-		        startService(intent);
-		        count=0;
-		        receiver=new MyReceiver();
-		        IntentFilter filter=new IntentFilter();
-		        filter.addAction("android.intent.action.test");
-		        falldetection.this.registerReceiver(receiver,filter);
+				 android.util.Log.v("acc===>", "isPlay1==="+ isPlay );
+				 if(isPlay){
+					 gif3.showAnimation();//gif開始撥放
+					 start.setBackground(getResources().getDrawable(R.drawable.stop));//更換停止圖片
+					 //stop.setEnabled(true);
+					 phonenumber.setEnabled(false);
+					 Intent intentstart = new Intent(falldetection.this, detection.class);
+					 startService(intentstart);
+					 count=0;
+					 receiver=new MyReceiver();
+					 IntentFilter filter=new IntentFilter();
+					 filter.addAction("android.intent.action.test");
+					 falldetection.this.registerReceiver(receiver,filter);
+					 imok.setEnabled(false);
+					 android.util.Log.i("acc===>", "isPlay2==="+ isPlay );
+				 }
+				 else{
+					 start.setBackground(getResources().getDrawable(R.drawable.play));
+					 gif3.showCover();
+					 Intent intentstop = new Intent(falldetection.this, detection.class);
+					 stopService(intentstop);
+
+					 //stop.setEnabled(false);
+					 phonenumber.setEnabled(true);
+					 count=0;
+					 android.util.Log.i("acc===>", "isPlay3==="+ isPlay );
+				 }
+				 isPlay = !isPlay;
 
              }
 
         };
 
- private OnClickListener stopservice = new OnClickListener()
-        {
-            public void onClick(View v)
-             {
-				 gif3.showCover();
-				 Intent intent = new Intent(falldetection.this, detection.class);
-		        stopService(intent);
-		        falldetection.this.unregisterReceiver(receiver); 
-		        stop.setEnabled(false);
-		        phonenumber.setEnabled(true);
-		        count=0;
-             }
-        };  
+
         private OnClickListener ok = new OnClickListener()
         {
             public void onClick(View v)
              {
-				 gif3.showAnimation();
-				 Intent intent = new Intent(falldetection.this, detection.class);
+				 //falldetection.this.unregisterReceiver(receiver);
+             	gif3.showCover();
+             	gif3.setGifImage(getResources().openRawResource(R.raw.walker));
+             	gif3.showAnimation();//gif開始撥放
+				imok.setBackground(getResources().getDrawable(R.drawable.ok));
+				Intent intent = new Intent(falldetection.this, detection.class);
 		        stopService(intent);
 		        startService(intent);
              }
@@ -307,9 +315,14 @@ public class falldetection extends Activity {
             super.onPause();
            
            
-        }   
+        }
 
-   
-    
+	@Override
+	protected void onStop()
+	{
+		falldetection.this.unregisterReceiver(receiver);
+		super.onStop();
+	}
+
 	
 }
